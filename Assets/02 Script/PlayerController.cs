@@ -73,6 +73,8 @@ public class PlayerController : MonoBehaviour
         }
 
         x = Mathf.Lerp(x, NewXPos, Time.deltaTime * 10f * SpeedDodge);
+
+        transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
     }
 
     void FixedUpdate()
