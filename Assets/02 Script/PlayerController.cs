@@ -16,19 +16,20 @@ public class PlayerController : MonoBehaviour
     private Animator m_Animator;
     private float x;
     public float SpeedDodge;
+    private float speed = 10f;
 
     private void Start()
     {
         m_char = GetComponent<CharacterController>();
         m_Animator = GetComponent<Animator>();
-        transform.position = Vector3.zero;
+        transform.position = new Vector3(0, 0.5f, -9f);
     }
-
 
     void Update()
     {
-        SwipeLeft = Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A); // 왼쪽 이동은 방향키랑 A키
-        SwipeRight = Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D); // 오른쪽 이동은 방향키랑 D키
+
+        SwipeLeft = Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A); // 왼쪽 이동은 방향키랑 A키
+        SwipeRight = Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D); // 오른쪽 이동은 방향키랑 D키
 
         if (SwipeLeft)
         {
@@ -45,7 +46,6 @@ public class PlayerController : MonoBehaviour
                 m_Animator.Play("DodgeLeft");
             }
         }
-
         else if (SwipeRight)
         {
             if (c_Side == SIDE.Center)
@@ -61,8 +61,8 @@ public class PlayerController : MonoBehaviour
                 m_Animator.Play("DodgeRight");
             }
         }
+
         x = Mathf.Lerp(x, NewXPos, Time.deltaTime * 10f * SpeedDodge);
         m_char.Move((x - transform.position.x) * Vector3.right);
-
     }
 }
