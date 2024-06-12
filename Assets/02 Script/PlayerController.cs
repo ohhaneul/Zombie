@@ -13,20 +13,16 @@ public class PlayerController : MonoBehaviour
     public bool SwipeRight;
     public bool SwipeUp;
     public float XValue = 2.5f;
-    private CharacterController m_char;
     private Rigidbody rb;
     private Animator m_Animator;
     private float x;
-    public float SpeedDodge;
-    private float speed = 10f;
-    public float SpeedDodge = 5f; // SpeedDodge ï¿½Ê±ï¿½È­
+    public float SpeedDodge = 5f; // SpeedDodge ÃÊ±âÈ­
     public float speed = 10f;
     public float JumpPower = 5f;
     private bool isJump = false;
 
     private void Start()
     {
-        m_char = GetComponent<CharacterController>();
         rb = GetComponent<Rigidbody>();
         m_Animator = GetComponent<Animator>();
         transform.position = new Vector3(0, 0.5f, -9f);
@@ -35,8 +31,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         SwipeUp = Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W);
-        SwipeLeft = Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ AÅ°
-        SwipeRight = Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ DÅ°
+        SwipeLeft = Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A); // ¿ÞÂÊ ÀÌµ¿Àº ¹æÇâÅ°¶û AÅ°
+        SwipeRight = Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D); // ¿À¸¥ÂÊ ÀÌµ¿Àº ¹æÇâÅ°¶û DÅ°
 
         if (SwipeUp && isJump == false)
         {
@@ -79,11 +75,12 @@ public class PlayerController : MonoBehaviour
         x = Mathf.Lerp(x, NewXPos, Time.deltaTime * 10f * SpeedDodge);
     }
 
+    void FixedUpdate()
     {
-        // ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½
+        // »õ·Î¿î À§Ä¡ °è»ê
         Vector3 newPosition = new Vector3(x, transform.position.y, transform.position.z + speed * Time.deltaTime);
 
-        // Rigidbodyï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ï¿ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½
+        // Rigidbody¸¦ ÀÌ¿ëÇÏ¿© »õ·Î¿î À§Ä¡·Î ÀÌµ¿
         rb.MovePosition(newPosition);
     }
 
