@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         m_char = GetComponent<CharacterController>();
         m_Animator = GetComponent<Animator>();
-        transform.position = Vector3.zero;
+        transform.position = new Vector3(0, 0.5f, -9);
     }
 
 
