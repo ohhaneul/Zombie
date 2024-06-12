@@ -16,19 +16,20 @@ public class PlayerController : MonoBehaviour
     private Animator m_Animator;
     private float x;
     public float SpeedDodge;
+    private float speed = 10f;
 
     private void Start()
     {
         m_char = GetComponent<CharacterController>();
         m_Animator = GetComponent<Animator>();
-        transform.position = new Vector3(0, 0.5f, -9);
+        transform.position = new Vector3(0, 0.5f, -9f);
     }
-
 
     void Update()
     {
-        SwipeLeft = Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A); // ¿ÞÂÊ ÀÌµ¿Àº ¹æÇâÅ°¶û AÅ°
-        SwipeRight = Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D); // ¿À¸¥ÂÊ ÀÌµ¿Àº ¹æÇâÅ°¶û DÅ°
+
+        SwipeLeft = Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A); // ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ AÅ°
+        SwipeRight = Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ DÅ°
 
         if (SwipeLeft)
         {
@@ -45,7 +46,6 @@ public class PlayerController : MonoBehaviour
                 m_Animator.Play("DodgeLeft");
             }
         }
-
         else if (SwipeRight)
         {
             if (c_Side == SIDE.Center)
@@ -61,8 +61,8 @@ public class PlayerController : MonoBehaviour
                 m_Animator.Play("DodgeRight");
             }
         }
+
         x = Mathf.Lerp(x, NewXPos, Time.deltaTime * 10f * SpeedDodge);
         m_char.Move((x - transform.position.x) * Vector3.right);
-
     }
 }
