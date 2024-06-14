@@ -9,6 +9,7 @@ public class SectionControl : MonoBehaviour
     public bool isCreatingSection = false;     // ¶¥ »ý¼º - Âü °ÅÁþÀ¸·Î ÆÇº°
     public int secNum;              // ¶¥ ÁöÁ¤
 
+
     void Update()
     {
         if (isCreatingSection == false) // ¶¥ÀÌ ¾øÀ¸¸é
