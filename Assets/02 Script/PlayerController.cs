@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     private float x;
     public float SpeedDodge = 5f; // SpeedDodge 초기화
     public float speed = 10f;
-    public float JumpPower = 5f;
+    public float JumpPower = 10f; // JumpPower 증가
     private bool isJump = false;
 
     private void Start()
@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         m_Animator = GetComponent<Animator>();
         transform.position = new Vector3(0, 0.5f, -9f);
+
+        // 중력 증가
+        Physics.gravity = new Vector3(0, -30f, 0);
     }
 
     void Update()
