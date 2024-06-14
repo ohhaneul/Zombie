@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: b58f9abd6910f6044b9a9ef0e320914c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BloodDrop_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 272
+        width: 76
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d3c8ed8e089c14db63fec70c454e9f
+      internalID: -726907406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodDrop_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 238
+        width: 108
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abc4ed4df87e054b91dff7005593d8f
+      internalID: 1606094514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodDrop_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 222
+        width: 180
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84ff18734a290948a8c3fa630bec65a
+      internalID: 2096621628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodDrop_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 317
+        width: 101
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b13867498f059c4383a3d31ab1184b7
+      internalID: -1223127643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodDrop_13
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 309
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ac9c7495875274291a74a3e0810a93
+      internalID: -1518892509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodDrop_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 47
+        width: 161
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80dc14ff608f354b927822ad7da0463
+      internalID: -587993577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodDrop_18
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 51
+        width: 150
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d041d42f1aedc44e80c038ccd87c5f2
+      internalID: -979265936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BloodDrop_28
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 61
+        width: 194
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ac216dadc4aa541a07217fa3065d4a
+      internalID: 542247032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: de627b73dd7f6d346a51c93784ca8dca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BloodDrop_0: -1602887002
+      BloodDrop_1: -726907406
+      BloodDrop_10: 711452973
+      BloodDrop_11: -442488045
+      BloodDrop_12: 1066865767
+      BloodDrop_13: -1518892509
+      BloodDrop_14: -587993577
+      BloodDrop_15: 248264079
+      BloodDrop_16: -2510999
+      BloodDrop_17: -1575656071
+      BloodDrop_18: -979265936
+      BloodDrop_19: 1568837142
+      BloodDrop_2: 1606094514
+      BloodDrop_20: -50330337
+      BloodDrop_21: 1224708868
+      BloodDrop_22: -224794113
+      BloodDrop_23: -1702368230
+      BloodDrop_24: 329269298
+      BloodDrop_25: -1901838704
+      BloodDrop_26: 1272247129
+      BloodDrop_27: -1621137406
+      BloodDrop_28: 542247032
+      BloodDrop_29: -329744478
+      BloodDrop_3: 1411083570
+      BloodDrop_30: -60433298
+      BloodDrop_31: -1353292168
+      BloodDrop_32: 179929499
+      BloodDrop_33: 77484828
+      BloodDrop_34: 1016544575
+      BloodDrop_35: -1774001452
+      BloodDrop_36: -732819106
+      BloodDrop_37: -845796510
+      BloodDrop_38: -1350886310
+      BloodDrop_39: 405619808
+      BloodDrop_4: 2096621628
+      BloodDrop_40: -459677414
+      BloodDrop_41: 1291208967
+      BloodDrop_42: 336373329
+      BloodDrop_43: -1163852949
+      BloodDrop_44: 1990812753
+      BloodDrop_45: 1182919324
+      BloodDrop_46: 1956447339
+      BloodDrop_5: -1223127643
+      BloodDrop_6: -1732821898
+      BloodDrop_7: -1927363943
+      BloodDrop_8: -480881616
+      BloodDrop_9: -784905412
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
