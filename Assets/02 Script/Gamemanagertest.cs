@@ -15,6 +15,7 @@ public class GameManagertest : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject); // 씬 전환 시에도 인스턴스를 유지하려면 추가합니다.
         }
         else
         {
