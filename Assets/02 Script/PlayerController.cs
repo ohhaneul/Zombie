@@ -113,11 +113,15 @@ public class PlayerController : MonoBehaviour
         // 충돌한 오브젝트가 파츠인지 확인
         if (other.gameObject.CompareTag("Part"))
         {
-            // 파츠를 먹는 로직 처리
-            CollectPart(other.gameObject);
-
-            // 파츠 오브젝트 제거
-            Destroy(other.gameObject);
+            if (other.gameObject.CompareTag("Part"))
+            {
+                ZombieParttest part = other.GetComponent<ZombieParttest>();
+                if (part)
+                {
+                    GameManagertest.Instance.CollectPart(part);
+                }
+                Destroy(other.gameObject);
+            }
         }
     }
 }
