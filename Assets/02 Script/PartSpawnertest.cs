@@ -18,7 +18,6 @@ public class PartSpawner : MonoBehaviour
     public float CreateWave = 3f;
     public float Distance = 25;
 
-    private Transform trainTransform;
 
     private Coroutine spawnCoroutine;
 
@@ -63,7 +62,7 @@ public class PartSpawner : MonoBehaviour
                 GameObject groundObject = GetGroundObjectAtPosition(spawnPosition);
                 if (groundObject != null)
                 {
-                    spawnPosition.y = groundObject.transform.position.y + 3.5f; // Ground 위에 1.0f 높이로 파츠 생성
+                    spawnPosition.y = groundObject.transform.position.y + 3.5f; // Ground 위에 3.5f 높이로 파츠 생성
                 }
 
                 GameObject partPrefab = GetPartPrefab(GameManagertest.Instance.currentPartType);

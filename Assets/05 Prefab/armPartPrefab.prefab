@@ -113,6 +113,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lt_elbow
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cb55251aa07fa4a90a7b5187ac9a2795, type: 3}
+      propertyPath: m_TagString
+      value: Part
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

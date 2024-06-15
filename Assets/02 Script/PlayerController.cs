@@ -97,4 +97,27 @@ public class PlayerController : MonoBehaviour
             isJump = false;
         }
     }
+
+
+    // 파츠를 먹는 로직을 처리하는 메서드
+    void CollectPart(GameObject part)
+    {
+        // 여기에 파츠를 먹었을 때의 로직을 작성
+        // 예를 들면, 점수를 증가시키거나 UI를 업데이트하는 등의 작업이 포함될 수 있습니다.
+        Debug.Log("Collected a part!");
+    }
+
+    // 파츠와 충돌했을 때 호출되는 메서드
+    void OnTriggerEnter(Collider other)
+    {
+        // 충돌한 오브젝트가 파츠인지 확인
+        if (other.gameObject.CompareTag("Part"))
+        {
+            // 파츠를 먹는 로직 처리
+            CollectPart(other.gameObject);
+
+            // 파츠 오브젝트 제거
+            Destroy(other.gameObject);
+        }
+    }
 }

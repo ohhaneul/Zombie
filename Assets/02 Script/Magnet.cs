@@ -18,18 +18,6 @@ public class Magnet : MonoBehaviour
         magnetActive = true;
     }
 
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    InvokeRepeating("SpawnMagnet", spawnInterval, spawnInterval);
-    //}
-
-    //void SpawnMagnet()
-    //{
-    //    // 현재 위치에서 자석 아이템 생성
-    //    Instantiate(magnetPrefab, transform.position, transform.rotation);
-    //}
-
     // Update is called once per frame
     void Update()
     {

@@ -3663,6 +3663,7 @@ GameObject:
   - component: {fileID: 1385921501}
   - component: {fileID: 1385921500}
   - component: {fileID: 1385921502}
+  - component: {fileID: 1385921503}
   m_Layer: 0
   m_Name: ObjectManager
   m_TagString: Untagged
@@ -3723,6 +3724,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partsToNextType: 20
   currentPartType: 0
+--- !u!114 &1385921503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385921499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962d48d04ad193f48b183cb4c44c4c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnetItem: {fileID: 7181231634680795107, guid: 00adb62a8212f764a95990aef52c5e9c, type: 3}
+  spawnInterval: 10
+  rail1Position: {x: -2.5, y: 2}
+  rail2Position: {x: 0, y: 2}
+  rail3Position: {x: 2.5, y: 2}
+  playerTransform: {fileID: 692630983}
 --- !u!1 &1403115032
 GameObject:
   m_ObjectHideFlags: 0
@@ -4596,7 +4615,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772581973}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6623adc5539fe49498049cc990df1f4f, type: 3}
@@ -4707,7 +4726,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772581973}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 449cc6d789fa30a4f8bccf5ff1e31e03, type: 3}
