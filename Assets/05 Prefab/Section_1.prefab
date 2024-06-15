@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 7657868548175720414}
   - component: {fileID: 4315100536690850061}
   m_Layer: 0
-  m_Name: Section 1
+  m_Name: Section_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -551,9 +551,12 @@ Transform:
   m_Children:
   - {fileID: 4993944623191688386}
   - {fileID: 3623512580952593689}
+  - {fileID: 3988727475494811814}
   - {fileID: 209965708334138288}
+  - {fileID: 7317489572169451450}
   - {fileID: 5331711628900436844}
   - {fileID: 6334613831430830653}
+  - {fileID: 1346448101113267490}
   m_Father: {fileID: 7413802765133594753}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9087893936829586765
@@ -724,8 +727,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
   m_PrefabInstance: {fileID: 209965708334012720}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1001 &1346448101113405346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -811,27 +812,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
   m_PrefabInstance: {fileID: 1346448101113405346}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
---- !u!1 &1346448101113370880 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-  m_PrefabInstance: {fileID: 1346448101113405346}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2179673750940307587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346448101113370880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f511e628fde9d6244b22a2d00a5c6564, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
->>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
-=======
->>>>>>> parent of e17aa67 (아이템 파츠 생성)
 --- !u!1001 &3623512580952199065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -917,8 +897,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
   m_PrefabInstance: {fileID: 3623512580952199065}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1001 &3988727475494674982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1004,7 +982,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
   m_PrefabInstance: {fileID: 3988727475494674982}
   m_PrefabAsset: {fileID: 0}
->>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
 --- !u!1001 &4993944623192088130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1260,8 +1237,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
   m_PrefabInstance: {fileID: 6334613831430693053}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1001 &7317489572169850170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1347,24 +1322,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
   m_PrefabInstance: {fileID: 7317489572169850170}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
---- !u!1 &7317489572169816984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-  m_PrefabInstance: {fileID: 7317489572169850170}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &708832986179768977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7317489572169816984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f511e628fde9d6244b22a2d00a5c6564, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
->>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
-=======
->>>>>>> parent of e17aa67 (아이템 파츠 생성)
