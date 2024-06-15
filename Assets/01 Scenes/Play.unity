@@ -613,28 +613,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4993944623192185056, guid: 2c311258d2a6b4047884f2a6ccdb0f0e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 248241306}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c311258d2a6b4047884f2a6ccdb0f0e, type: 3}
---- !u!1 &191985956 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-  m_PrefabInstance: {fileID: 1996323226}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &191985961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 191985956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f511e628fde9d6244b22a2d00a5c6564, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &207627895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -703,14 +683,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -721,11 +693,9 @@ PrefabInstance:
     - {fileID: 100012, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1444909897}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 --- !u!1 &248241301 stripped
@@ -745,6 +715,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f511e628fde9d6244b22a2d00a5c6564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of e17aa67 (아이템 파츠 생성)
 --- !u!4 &260098989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
@@ -973,23 +945,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
   m_PrefabInstance: {fileID: 207627895}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &361743708 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-  m_PrefabInstance: {fileID: 752540173}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &361743713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361743708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f511e628fde9d6244b22a2d00a5c6564, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &391016733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,6 +1020,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391016733}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &396159183
 GameObject:
@@ -1198,6 +1154,8 @@ PrefabInstance:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
+=======
+>>>>>>> parent of e17aa67 (아이템 파츠 생성)
 --- !u!1 &430785684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &585719917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2722,14 +2680,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -2740,10 +2690,7 @@ PrefabInstance:
     - {fileID: 100012, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 361743713}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
 --- !u!1 &793088913
 GameObject:
@@ -3423,6 +3370,7 @@ MonoBehaviour:
   player: {fileID: 692630983}
   offset: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1001 &1015936031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3522,6 +3470,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
+=======
+>>>>>>> parent of e17aa67 (아이템 파츠 생성)
 --- !u!1 &1079675243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4118,6 +4068,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 1278807941}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1315110981
 GameObject:
 =======
@@ -4219,6 +4170,8 @@ MeshFilter:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
+=======
+>>>>>>> parent of e17aa67 (아이템 파츠 생성)
 --- !u!1 &1316312555
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,6 +4247,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316312555}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1388619272
 GameObject:
@@ -4396,6 +4350,8 @@ MeshFilter:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
+=======
+>>>>>>> parent of e17aa67 (아이템 파츠 생성)
 --- !u!1 &1403115032
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,6 +4569,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 1425392593}
   m_CullTransparentMesh: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &1452870820 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
@@ -4654,6 +4611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f511e628fde9d6244b22a2d00a5c6564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of e17aa67 (아이템 파츠 생성)
 --- !u!1001 &1501718494
 >>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
 PrefabInstance:
@@ -4723,14 +4682,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4741,10 +4692,7 @@ PrefabInstance:
     - {fileID: 100012, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1436776282}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
 --- !u!1 &1547371849
 GameObject:
@@ -4889,14 +4837,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4907,10 +4847,7 @@ PrefabInstance:
     - {fileID: 100012, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 403693331}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
 --- !u!1001 &1565883335
 PrefabInstance:
@@ -4980,14 +4917,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -4998,10 +4927,7 @@ PrefabInstance:
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100008, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 968691840}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
 --- !u!1 &1567410008
 GameObject:
@@ -6023,14 +5949,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6041,10 +5959,7 @@ PrefabInstance:
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100008, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 191985961}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
 --- !u!1 &2013506326
 GameObject:
@@ -6184,14 +6099,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6202,10 +6109,7 @@ PrefabInstance:
     - {fileID: 100012, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1293108556}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
 --- !u!4 &2058501347 stripped
 Transform:
@@ -6280,14 +6184,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6400000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6400020, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
       propertyPath: m_Convex
       value: 1
@@ -6298,10 +6194,7 @@ PrefabInstance:
     - {fileID: 100014, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     - {fileID: 100008, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 100002, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1328207663}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4590a390c0bf8de46a3c24ab5f040590, type: 3}
 >>>>>>> e17aa6790008a2a11a0ab565e47ea2a9cdb0dc19
 --- !u!4 &2084233591 stripped

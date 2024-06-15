@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         m_Animator = GetComponent<Animator>();
-        transform.position = new Vector3(0, 0.55f, -9f);
+        transform.position = new Vector3(0, 0.5f, -9f);
 
         // 중력 증가
         Physics.gravity = new Vector3(0, -30f, 0);
