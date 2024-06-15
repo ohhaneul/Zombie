@@ -2131,6 +2131,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 32
   m_CollisionDetection: 0
+--- !u!114 &692630985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692630977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1807a01774e00fe43a7635200324703a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnetRange: 3
+  magnetSpeed: 10
+  magnetActive: 0
+  magnetDuration: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,6 +2739,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: f6863227f0b9042ca9c8a77f55427062, type: 3}
       insertIndex: -1
       addedObject: {fileID: 692630984}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: f6863227f0b9042ca9c8a77f55427062, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 692630985}
   m_SourcePrefab: {fileID: 100100000, guid: f6863227f0b9042ca9c8a77f55427062, type: 3}
 --- !u!1 &910554512
 GameObject:
@@ -3722,7 +3741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9428a842aa79ee4faa55bebbbeb1c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  partsToNextType: 20
+  partsToNextType: 30
   currentPartType: 0
 --- !u!114 &1385921503
 MonoBehaviour:
@@ -3736,7 +3755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 962d48d04ad193f48b183cb4c44c4c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnetItem: {fileID: 7181231634680795107, guid: 00adb62a8212f764a95990aef52c5e9c, type: 3}
+  magnetItem: {fileID: 4090482839036441941, guid: f022ea9172a8d854bb88869f7ac93daa, type: 3}
   spawnInterval: 10
   rail1Position: {x: -2.5, y: 2}
   rail2Position: {x: 0, y: 2}

@@ -8,7 +8,7 @@ TagManager:
   - Ground
   - Obstacle
   - Part
-  - Magnet
+  - MagnetItem
   layers:
   - Default
   - TransparentFX

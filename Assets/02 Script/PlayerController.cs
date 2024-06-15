@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public float JumpPower = 10f; // JumpPower 증가
     private bool isJump = false;
 
+    private Magnet magnetEffect;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,7 +32,11 @@ public class PlayerController : MonoBehaviour
 
         // 중력 증가
         Physics.gravity = new Vector3(0, -30f, 0);
+
+        // 플레이어가 Magnet 컴포넌트를 가지고 있는지 확인하고 참조를 얻습니다.
+        magnetEffect = GetComponent<Magnet>();
     }
+
 
     void Update()
     {
@@ -113,15 +119,26 @@ public class PlayerController : MonoBehaviour
         // 충돌한 오브젝트가 파츠인지 확인
         if (other.gameObject.CompareTag("Part"))
         {
-            if (other.gameObject.CompareTag("Part"))
+            ZombieParttest part = other.GetComponent<ZombieParttest>();
+            if (part)
             {
-                ZombieParttest part = other.GetComponent<ZombieParttest>();
-                if (part)
-                {
-                    GameManagertest.Instance.CollectPart(part);
-                }
-                Destroy(other.gameObject);
+                GameManagertest.Instance.CollectPart(part);
             }
+            Destroy(other.gameObject);
         }
+
+        if (other.gameObject.CompareTag("MagnetItem"))
+        {
+            // Magnet 컴포넌트가 있으면, ActivateMagnet 메서드를 호출합니다.
+            if (magnetEffect != null)
+            {
+                magnetEffect.ActivateMagnet();
+                Debug.Log("Magnet item collected!");
+            }
+
+            Destroy(other.gameObject);
+        }
+
+
     }
 }
