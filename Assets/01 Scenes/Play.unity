@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.014600766, g: 0.0054831184, b: 0.0041169827, a: 1}
+  m_IndirectSpecularColor: {r: 0.014604162, g: 0.0054844553, b: 0.004117978, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5799,6 +5799,7 @@ GameObject:
   - component: {fileID: 2105650004}
   - component: {fileID: 2105650003}
   - component: {fileID: 2105650002}
+  - component: {fileID: 2105650005}
   m_Layer: 0
   m_Name: ObjectManager
   m_TagString: Untagged
@@ -5859,6 +5860,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2105650005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105650001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 962d48d04ad193f48b183cb4c44c4c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnetItem: {fileID: 4090482839036441941, guid: f022ea9172a8d854bb88869f7ac93daa, type: 3}
+  spawnInterval: 5
+  rail1Position: {x: 2.5, y: 2}
+  rail2Position: {x: 0, y: 2}
+  rail3Position: {x: -2.5, y: 2}
+  playerTransform: {fileID: 692630983}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
