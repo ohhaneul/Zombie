@@ -38,9 +38,10 @@ public class GameManagertest : MonoBehaviour
         UpdateScore();
         UpdateDistance();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         UpdateDistance();
+        UpdateScore();
     }
 
     public void CollectPart(ZombieParttest part)
@@ -66,40 +67,51 @@ public class GameManagertest : MonoBehaviour
             currentPartType = ZombieParttest.PartType.Head;
         }
 
-        UpdateScore();
+        
     }
 
     public TMP_Text ProgressText;
     public TMP_Text DistanceText;
+    public TMP_Text InDistanceText;
 
     //public Transform playerTransform;
     public void UpdateScore()
     {
-
-        if (totalPartsCollected < partsToNextType)
+        int percent = totalPartsCollected * 100 / 60;
+        ProgressText.text = percent + "% 진행";
+        if (percent == 100)
         {
-            ProgressText.text = "진행률 0%";
+            GameObject gameover = GameObject.FindGameObjectWithTag("Player");
+            GameOverPlayer overUI = gameover.GetComponent<GameOverPlayer>();
+            if (overUI != null)
+            {
+                overUI.SetGameOverUI();
+            }
         }
-        else if (totalPartsCollected < partsToNextType * 2)
-        {
-            ProgressText.text = "진행률 33%";
-        }
-        else if (totalPartsCollected < partsToNextType * 3)
-        {
-            ProgressText.text = "진행률 67%";
-        }
-        else
-        {
-            ProgressText.text = "진행률 100%";
-        }
+        //if (totalPartsCollected < partsToNextType)
+        //{
+        //    ProgressText.text = "0% 진행";
+        //}
+        //else if (totalPartsCollected < partsToNextType * 2)
+        //{
+        //    ProgressText.text = "33% 진행";
+        //}
+        //else if (totalPartsCollected < partsToNextType * 3)
+        //{
+        //    ProgressText.text = "67% 진행";
+        //}
+        //else
+        //{
+        //    ProgressText.text = "100% 진행";
+        //}
     }
 
     public void UpdateDistance()
     {
        float lastZPosition = playerController.GetLastZPosition();
-       int distance = Mathf.FloorToInt(lastZPosition);
-       DistanceText.text = "거리" + distance + "m";
-        
+       int distance = Mathf.FloorToInt(lastZPosition) + 10;
+       DistanceText.text = "거리 " + distance + " m";
+       InDistanceText.text = "거리 " + distance + " m";
     }
 
 }

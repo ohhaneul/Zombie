@@ -26,10 +26,10 @@ public class SectionControl : MonoBehaviour
         GameObject newSection = Instantiate(section[secNum], new Vector3(0, 0, zPos), Quaternion.identity);
         // Z좌표를 받아와서 그 위치에 생성할거임
         zPos += 50; // 이게 땅 크기이자 간격 (Ground)
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(5.0f);
         isCreatingSection = false;  // 다시 꺼주기
 
-        yield return new WaitForSeconds(5);  
+        yield return new WaitForSeconds(6.0f);  
         // 생성이랑 파괴 시간을 같이 해야 메모리 덜 잡아먹을듯
         Destroy(newSection);  // 생성된 땅 파괴
 

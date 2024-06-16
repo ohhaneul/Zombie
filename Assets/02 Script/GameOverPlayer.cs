@@ -24,6 +24,7 @@ public class GameOverPlayer : MonoBehaviour
 
     public void SetGameOverUI()
     {
+        Time.timeScale = 0;
         Debug.Log("죽을게 뿌직");
         LeanTween.moveLocalY(UI, -50f, 0.5f)   //y축 좌표를 저만큼 0.5초 동안 위로 이동 
             .setDelay(0.5f)
