@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6081834867616418849}
-  - component: {fileID: -8909716884802237580}
   - component: {fileID: 4016386322553549789}
   m_Layer: 0
   m_Name: bodyPartPrefab
@@ -34,20 +33,6 @@ Transform:
   - {fileID: 6562283905411940419}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8909716884802237580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938069596983148496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91c82f16a574a2544adaa524822a6587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  partType: 0
-  scoreValue: 1
 --- !u!114 &4016386322553549789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +98,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: torso
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: d19f4567af4b54e3c844b69f126b2ae5, type: 3}
+      propertyPath: m_TagString
+      value: Part
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -123,6 +112,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: d19f4567af4b54e3c844b69f126b2ae5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1326744572884363158}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: d19f4567af4b54e3c844b69f126b2ae5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 886144279398884453}
   m_SourcePrefab: {fileID: 100100000, guid: d19f4567af4b54e3c844b69f126b2ae5, type: 3}
 --- !u!4 &6562283905411940419 stripped
 Transform:
@@ -182,3 +174,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &886144279398884453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875304438565532240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91c82f16a574a2544adaa524822a6587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partType: 0
+  scoreValue: 1

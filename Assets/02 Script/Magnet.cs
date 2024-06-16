@@ -9,26 +9,24 @@ public class Magnet : MonoBehaviour
     //public GameObject magnetPrefab; //자석 아이템 프리팹
     //public float spawnInterval = 5f; //아이템 생성 간격 기본 5초
 
-    public float magnetRange = 2.7f;
-    public float magnetSpeed = 5f;
+    public float magnetRange = 3f;
+    public float magnetSpeed = 10f;
     public bool magnetActive = false;
+    public float magnetDuration = 5f;
 
     public void ActivateMagnet()
     {
         magnetActive = true;
+        StartCoroutine(DeactivateMagnetAfterDelay());
+        Debug.Log("Magnet effect is now active!"); // 자석 효과 활성화 메시지 출력
     }
 
-    // Start is called before the first frame update
-    //void Start()
-    //{
-    //    InvokeRepeating("SpawnMagnet", spawnInterval, spawnInterval);
-    //}
-
-    //void SpawnMagnet()
-    //{
-    //    // 현재 위치에서 자석 아이템 생성
-    //    Instantiate(magnetPrefab, transform.position, transform.rotation);
-    //}
+    private IEnumerator DeactivateMagnetAfterDelay()
+    {
+        yield return new WaitForSeconds(magnetDuration);
+        magnetActive = false;
+        Debug.Log("Magnet effect has ended."); // 자석 효과 비활성화 메시지 출력
+    }
 
     // Update is called once per frame
     void Update()

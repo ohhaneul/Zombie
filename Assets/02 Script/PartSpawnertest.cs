@@ -18,6 +18,7 @@ public class PartSpawner : MonoBehaviour
     public float CreateWave = 3f;
     public float Distance = 25;
 
+
     private Coroutine spawnCoroutine;
 
     private void Start()
@@ -49,11 +50,21 @@ public class PartSpawner : MonoBehaviour
                     selectedRailPos = rail3Position;
                     break;
             }
+
+
             // CreateCount수만큼 생성
             for (int i = 0; i < CreateCount; i++)
             {
 
                 Vector3 spawnPosition = new Vector3(selectedRailPos.x, selectedRailPos.y, playerTransform.position.z + Distance);
+
+                // "Ground" 태그가 붙은 오브젝트의 위치 위에 생성
+                GameObject groundObject = GetGroundObjectAtPosition(spawnPosition);
+                if (groundObject != null)
+                {
+                    spawnPosition.y = groundObject.transform.position.y + 3.5f; // Ground 위에 3.5f 높이로 파츠 생성
+                }
+
                 GameObject partPrefab = GetPartPrefab(GameManagertest.Instance.currentPartType);
 
                 Instantiate(partPrefab, spawnPosition, Quaternion.identity);
@@ -63,9 +74,23 @@ public class PartSpawner : MonoBehaviour
         }
     }
 
+    GameObject GetGroundObjectAtPosition(Vector3 position)
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(position, Vector3.up, out hit, Mathf.Infinity))
+        {
+            if (hit.collider.CompareTag("Ground"))
+            {
+                return hit.collider.gameObject;
+            }
+        }
+        return null;
+    }
+
+
     void SpawnPartBehindRandomRail(float zPositionOffset)
     {
-
+        
     }
 
     GameObject GetPartPrefab(ZombieParttest.PartType partType)
