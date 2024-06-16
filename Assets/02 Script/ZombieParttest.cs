@@ -13,5 +13,6 @@ public class ZombieParttest : MonoBehaviour
             GameManagertest.Instance.CollectPart(this);
             Destroy(gameObject);
         }
+        else return;
     }
 }
