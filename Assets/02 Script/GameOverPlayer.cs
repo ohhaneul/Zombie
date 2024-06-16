@@ -11,6 +11,8 @@ public class GameOverPlayer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("========================================");
+
         if (other.CompareTag("TrainBody"))
         {
             Debug.Log("È£Ãâ´ñ¾î");
