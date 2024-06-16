@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     public float JumpPower = 10f; // JumpPower 증가
     private bool isJump = false;
 
+    private float lastZPosition;    //마지막 z값
+
     private Magnet magnetEffect;
 
     private void Start()
@@ -85,6 +87,10 @@ public class PlayerController : MonoBehaviour
         x = Mathf.Lerp(x, NewXPos, Time.deltaTime * 10f * SpeedDodge);
 
         transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        
+        // 현재 z 위치를 lastZPosition에 저장
+        lastZPosition = transform.position.z;
+
     }
 
     void FixedUpdate()
@@ -92,9 +98,19 @@ public class PlayerController : MonoBehaviour
         // 새로운 위치 계산
         Vector3 newPosition = new Vector3(x, transform.position.y, transform.position.z + speed * Time.deltaTime);
 
+        // 현재 z 위치를 lastZPosition에 저장
+        lastZPosition = transform.position.z;
+
         // Rigidbody를 이용하여 새로운 위치로 이동
         rb.MovePosition(newPosition);
     }
+
+    // 마지막 z 위치를 반환하는 메소드
+    public float GetLastZPosition()
+    {
+        return lastZPosition;
+    }
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -155,4 +171,6 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
+    
 }

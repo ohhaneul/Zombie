@@ -6266,6 +6266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partsToNextType: 20
   currentPartType: 0
+  ProgressText: {fileID: 874063207}
+  DistanceText: {fileID: 335857786}
 --- !u!114 &2105650003
 MonoBehaviour:
   m_ObjectHideFlags: 0
