@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public class SectionControl : MonoBehaviour
@@ -33,4 +34,5 @@ public class SectionControl : MonoBehaviour
         Destroy(newSection);  // »ý¼ºµÈ ¶¥ ÆÄ±«
 
     }
+
 }

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6144527606349246394}
   - component: {fileID: 3169027334179456097}
   - component: {fileID: 3189247153164897228}
+  - component: {fileID: 2111115536332393779}
   m_Layer: 0
   m_Name: bodyPartPrefab
-  m_TagString: Untagged
+  m_TagString: Part
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,6 +112,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   partType: 0
   scoreValue: 1
+--- !u!195 &2111115536332393779
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938069596983148496}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &2191949818225371993
 PrefabInstance:
   m_ObjectHideFlags: 0

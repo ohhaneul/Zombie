@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.014600766, g: 0.0054831184, b: 0.0041169827, a: 1}
+  m_IndirectSpecularColor: {r: 0.014604162, g: 0.0054844553, b: 0.004117978, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2277,7 +2277,9 @@ PrefabInstance:
       propertyPath: m_TagString
       value: TrainBody
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5549797124087114739, guid: bfef21c1c4488ed40a15db48ea562afb, type: 3}
+    - {fileID: 5549797124083918387, guid: bfef21c1c4488ed40a15db48ea562afb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2396,6 +2398,22 @@ CapsuleCollider:
   m_Height: 2.32
   m_Direction: 1
   m_Center: {x: 0, y: 1.18, z: 0}
+--- !u!114 &692630990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692630977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1807a01774e00fe43a7635200324703a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnetRange: 5
+  magnetSpeed: 20
+  magnetActive: 0
+  magnetDuration: 3
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,6 +3178,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: f6863227f0b9042ca9c8a77f55427062, type: 3}
       insertIndex: -1
       addedObject: {fileID: 692630988}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: f6863227f0b9042ca9c8a77f55427062, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 692630990}
   m_SourcePrefab: {fileID: 100100000, guid: f6863227f0b9042ca9c8a77f55427062, type: 3}
 --- !u!1 &910554512
 GameObject:
@@ -3589,7 +3610,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3923687470615585453, guid: 1fa787787c668994cac58e2e6cad3da2, type: 3}
+    - {fileID: 3923687470612524909, guid: 1fa787787c668994cac58e2e6cad3da2, type: 3}
+    - {fileID: 1997134067436703461, guid: 1fa787787c668994cac58e2e6cad3da2, type: 3}
+    - {fileID: 1997134067435733797, guid: 1fa787787c668994cac58e2e6cad3da2, type: 3}
+    - {fileID: 1233052915746932152, guid: 1fa787787c668994cac58e2e6cad3da2, type: 3}
+    - {fileID: 1233052915747833976, guid: 1fa787787c668994cac58e2e6cad3da2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4159,6 +4186,7 @@ GameObject:
   - component: {fileID: 1403115034}
   - component: {fileID: 1403115033}
   - component: {fileID: 1403115035}
+  - component: {fileID: 1403115036}
   m_Layer: 0
   m_Name: MapManager
   m_TagString: Untagged
@@ -4214,6 +4242,37 @@ MonoBehaviour:
   zPos: 50
   isCreatingSection: 0
   secNum: 0
+--- !u!114 &1403115036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403115032}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 4, z: 52}
+  m_Center: {x: 0, y: 2, z: 14}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &1412773674
 GameObject:
   m_ObjectHideFlags: 0

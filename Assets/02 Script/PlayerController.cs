@@ -140,5 +140,19 @@ public class PlayerController : MonoBehaviour
         }
 
 
+        //if (other.gameObject.CompareTag("MagnetItem"))
+        //{
+        //    GameObject partai = GameObject.FindGameObjectWithTag("Part");
+        //    PartAI aiScript = partai.GetComponent<PartAI>();
+        //    if (aiScript)
+        //    {
+        //        aiScript.ActivateMagnet();
+        //        Debug.Log("³Ê ½ÇÇàµÆ´Ï?");
+        //    }
+        //    Debug.Log("ÀÚ¼® ÆÄ±« »Ñ¾±»Ñ¾±");
+        //    Destroy(other.gameObject); // ÀÚ¼® ¾ÆÀÌÅÛÀ» ÆÄ±«
+        //}
+
+
     }
 }

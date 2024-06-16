@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class Magnet : MonoBehaviour
 {
-    //public ParticleSystem magnetEffect; // 파티클 효과
-    //public float magnetRange = 2.7f;    //자석 효과 범위
-    //public GameObject magnetPrefab; //자석 아이템 프리팹
-    //public float spawnInterval = 5f; //아이템 생성 간격 기본 5초
-
     public float magnetRange = 3f;
     public float magnetSpeed = 10f;
     public bool magnetActive = false;
@@ -48,5 +43,5 @@ public class Magnet : MonoBehaviour
         }
     }
 
-   
+
 }
