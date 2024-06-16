@@ -8,10 +8,6 @@ public class GameOverPlayer : MonoBehaviour
     [SerializeField]
     private GameObject UI;
 
-    private void Start()
-    {
-        Debug.Log("준비댓어");
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,14 +18,12 @@ public class GameOverPlayer : MonoBehaviour
             Debug.Log("멈첫어");
             SetGameOverUI();  //아직
 
-            // 디버그 메시지를 출력
-            Debug.Log("죽을게 뿌직");
         }
     }
 
     public void SetGameOverUI()
     {
-        Debug.Log("호출돼써용");
+        Debug.Log("죽을게 뿌직");
         LeanTween.moveLocalY(UI, -50f, 0.5f)   //y축 좌표를 저만큼 0.5초 동안 위로 이동 
             .setDelay(0.5f)
             .setEase(LeanTweenType.easeInOutCubic)
